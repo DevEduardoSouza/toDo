@@ -16,21 +16,6 @@
     <div id="task-list-container">
 
       <ul id="task-list">
-        <li class="task-box">
-          <span class="task-checkbox"><input type="checkbox"></span>
-          <span class="task-title">Estudar javaScript</span>
-          <span class="task-description">Devo estudar javaScript e aplicar fazendo projetos</span>
-          <div class="task-infos-container">
-            <span class="task-date">
-              <ion-icon name="calendar-outline"></ion-icon>
-              <span>6 jun 2023</span>
-            </span>
-            <span class="task-signed">
-              <ion-icon name="person-outline"></ion-icon>
-              <span class="task-name">Eduardo de Souza</span>
-            </span>
-          </div>
-        </li>
 
         <li class="task-box">
           <span class="task-checkbox"><input type="checkbox"></span>
@@ -48,23 +33,8 @@
           </div>
         </li>
 
-        <li class="task-box">
-          <span class="task-checkbox"><input type="checkbox"></span>
-          <span class="task-title">Estudar javaScript</span>
-          <span class="task-description">Devo estudar javaScript e aplicar fazendo projetos</span>
-          <div class="task-infos-container">
-            <span class="task-date-content">
-              <ion-icon name="calendar-outline"></ion-icon>
-              <span class="task-date">6 jun 2023</span>
-            </span>
-            <span class="task-signed">
-              <ion-icon name="person-outline"></ion-icon>
-              <span class="task-name">Eduardo de Souza</span>
-            </span>
-          </div>
-        </li>
       </ul>
-      <div id="btns">
+      <div id="btns" class="hide">
         <button id="remove-btn" type="submit" >
           <ion-icon name="trash-outline"></ion-icon>
         </button>
@@ -74,26 +44,32 @@
       </div>
     </div>
 
-    <div id="task-add" class="hide">
+    <div id="task-add">
       <form>
         <input id="task-name" type="text" placeholder="Nome da tarefa">
-        <textarea id="task-description" placeholder="Descrição aqui"></textarea>
+        <textarea style="resize: none" id="task-description" placeholder="Descrição...."></textarea>
+       
+        <div id="btns-task-add">
 
+          <div id="btn-infos">
+            <button id="date-btn" type="submit">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </button>
+            <button id="user-btn" type="submit">
+              <ion-icon name="person-outline"></ion-icon>
+            </button>
+          </div>
 
+          <div id="change">
+            <button id="back-btn" type="submit" title="voltar">
+              <ion-icon name="backspace-outline"></ion-icon>
+            </button>
+            <button id="add-btn" type="submit" title="Adicionar" >
+              <ion-icon name="add-outline"></ion-icon>
+            </button>
+          </div>
 
-        <button id="add-btn" type="submit" >
-          <ion-icon name="add-outline"></ion-icon>
-        </button>
-        <button id="back-btn" type="submit">
-          <ion-icon name="backspace-outline"></ion-icon>
-        </button>
-        <button id="date-btn" type="submit">
-          <ion-icon name="calendar-outline"></ion-icon>
-        </button>
-        <button id="user-btn" type="submit">
-          <ion-icon name="person-outline"></ion-icon>
-        </button>
-
+        </div>
       </form>
     </div>
   </div>
