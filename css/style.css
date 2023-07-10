@@ -17,7 +17,7 @@ body{
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .hide{
@@ -67,7 +67,6 @@ body{
 .task-name{
   color: rgb(98, 98, 102);
   font-weight: 500;
-
 }
 #task-list .task-box .task-description{
   font-size: 15px;
@@ -105,5 +104,51 @@ body{
 }
 #btns #add-btn:hover{
   background-color:#09E01B;
+}
+
+/* Task add infos */
+
+#task-add{
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+#task-add form{
+  display: flex;
+  flex-direction: column;
+}
+#task-add form #btns-task-add{
+  display: flex;
+  justify-content: space-between;
+}
+#task-add input, textarea{
+  border: none;
+  padding-left: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: Helvetica, sans-serif;
+}
+#task-add form #task-name{
+  height: 35px;
+}
+#task-add form #task-description{
+  height: 105px;
+}
+#task-add form #task-name:focus, #task-description:focus{
+  outline: none;
+  height: 45px;
+}
+#task-add button{
+  background-color: #e9e6f8;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+#task-add button:hover{
+  background-color: #8871bba4;;
+}
+#task-add ion-icon{
+  font-size: 20px;
 }
 
