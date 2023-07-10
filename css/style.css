@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body{
+  font-family: Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #e9e6f8 ,#EFEEF5);
+  color: #000;
+}
+
+/* Task container */
+#tasks-container{
+  background-color: #fff;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.hide{
+  display: none;
+}
+
+/* Task header */
+#tasks-header{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  display: flex;
+}
+#tasks-header #tasks-length{
+  font-size: 14px;
+  background-color: #8871bba4;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+/* Task list */
+#task-list{
+  list-style: none;
+  cursor: pointer;
+}
+#task-list .task-box{
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 25px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+#task-list .task-box .task-checkbox{
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+#task-list .task-box .task-title{ 
+  font-weight: bold;
+}
+#task-list .task-box 
+.task-description,
+.task-date,
+.task-name{
+  color: rgb(98, 98, 102);
+  font-weight: 500;
+
+}
+#task-list .task-box .task-description{
+  font-size: 15px;
+}
+
+#task-list .task-box .task-infos-container {
+  display: flex;
+  gap: 10px;
+}
+
+#task-list .task-box .task-infos-container span{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* BTNS */
+#btns{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+#btns button{
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  transition: .5s;
+}
+#btns ion-icon{
+  font-size: 20px;
+}
+#btns #remove-btn:hover{
+  background-color:#ED0927;
+}
+#btns #add-btn:hover{
+  background-color:#09E01B;
+}
+
