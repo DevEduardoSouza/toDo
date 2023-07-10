@@ -7,8 +7,6 @@
   <title>toDo</title>
 </head>
 <body>
-  
-
   <div id="tasks-container">
     <div id="tasks-header">
       <h1>ToDo</h1>
@@ -18,7 +16,6 @@
     <div id="task-list-container">
 
       <ul id="task-list">
-
         <li class="task-box">
           <span class="task-checkbox"><input type="checkbox"></span>
           <span class="task-title">Estudar javaScript</span>
@@ -56,23 +53,28 @@
           <span class="task-title">Estudar javaScript</span>
           <span class="task-description">Devo estudar javaScript e aplicar fazendo projetos</span>
           <div class="task-infos-container">
-            <span class="task-date">
+            <span class="task-date-content">
               <ion-icon name="calendar-outline"></ion-icon>
-              <span>6 jun 2023</span>
+              <span class="task-date">6 jun 2023</span>
             </span>
             <span class="task-signed">
               <ion-icon name="person-outline"></ion-icon>
-              <span class="task-name-user">Eduardo de Souza</span>
+              <span class="task-name">Eduardo de Souza</span>
             </span>
           </div>
         </li>
-
-        
-        
       </ul>
+      <div id="btns">
+        <button id="remove-btn" type="submit" >
+          <ion-icon name="trash-outline"></ion-icon>
+        </button>
+        <button id="add-btn" type="submit" >
+          <ion-icon name="add-outline"></ion-icon>
+        </button>
+      </div>
     </div>
 
-    <div id="task-add">
+    <div id="task-add" class="hide">
       <form>
         <input id="task-name" type="text" placeholder="Nome da tarefa">
         <textarea id="task-description" placeholder="Descrição aqui"></textarea>
