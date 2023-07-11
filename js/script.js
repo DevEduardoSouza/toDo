@@ -64,7 +64,10 @@ function addNewTask() {
 
     newTask.addEventListener('click', ()=>{
       if(checkbox.checked) checkbox.checked=false;
-      else checkbox.checked=true;
+      else{
+        checkbox.checked=true;
+        closeDialog();
+      } 
     });
     
  
@@ -99,10 +102,14 @@ function getDate() {
 const btnBack = document.querySelector('#back-btn');
 btnBack.addEventListener('click', (e)=>{
       e.preventDefault();
-      dialog.classList.add('hide');
-
-      // Mostra os btns inicial
-      divBtns.classList.remove('hide');
+      
+      closeDialog();
 });
+
+// Função para fechar o dialog
+function closeDialog() {
+  divBtns.classList.remove('hide');
+  dialog.classList.add('hide');
+}
 
 
