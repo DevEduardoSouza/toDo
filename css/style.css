@@ -48,7 +48,12 @@ body{
   gap: 8px;
   padding-left: 25px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  transition: .5s;
 }
+#task-list .task-box:hover{
+  background-color: #bda7ee2d;
+}
+
 #task-list .task-box .task-checkbox{
   position: absolute;
   top: 20px;
