@@ -20,10 +20,6 @@ body{
   margin-top: 40px;
 }
 
-.hide{
-  display: none;
-}
-
 /* Task header */
 #tasks-header{
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
@@ -102,7 +98,7 @@ body{
 #btns #remove-btn:hover{
   background-color:#ED0927;
 }
-#btns #add-btn:hover{
+#btns #add-btn-task:hover{
   background-color:#09E01B;
 }
 
@@ -150,5 +146,9 @@ body{
 }
 #task-add ion-icon{
   font-size: 20px;
+}
+
+.hide{
+  display: none !important;
 }
 
