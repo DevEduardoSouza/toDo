@@ -2,6 +2,18 @@
 
 Este repositório contém um projeto simples de uma lista de tarefas (To-Do List) desenvolvido utilizando HTML, CSS e JavaScript. O objetivo desse projeto é fornecer uma aplicação básica para treinar as habilidades em JavaScript.
 
+## Imagens
+
+- Inicial 
+![Imagem do site](imgs/img_01.png)
+- Add nova tarefa
+![Imagem do site](imgs/img_02.png)
+- Resultado
+![Imagem do site](imgs/img_03.png)
+
+- Para mais: <a href="https://todo-eduardo.netlify.app/">Link do site</a>
+
+
 ## Funcionalidades
 
 - Adicionar novas tarefas à lista
