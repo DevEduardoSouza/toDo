@@ -57,6 +57,15 @@ function addNewTask() {
 
     // função de voltar
     // Selecionar o btn de voltar
+
+
+    //Personalizando o checkBox para quando clicar na aria da li ele ser ativado
+    const checkbox = newTask.querySelector('.task-checkbox input');
+
+    newTask.addEventListener('click', ()=>{
+      if(checkbox.checked) checkbox.checked=false;
+      else checkbox.checked=true;
+    });
     
  
   }else{
@@ -64,6 +73,9 @@ function addNewTask() {
   }
   
 }
+
+
+
 
 btnAddNewTask.addEventListener('click', (e)=>{
   e.preventDefault();
@@ -92,3 +104,5 @@ btnBack.addEventListener('click', (e)=>{
       // Mostra os btns inicial
       divBtns.classList.remove('hide');
 });
+
+
