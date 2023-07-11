@@ -144,4 +144,12 @@ function closeDialog() {
   dialog.classList.add('hide');
 }
 
+// user e date
+document.querySelector('#user-btn').addEventListener('click', (e)=>{
+  e.preventDefault();
+});
+document.querySelector('#date-btn').addEventListener('click', (e)=>{
+  e.preventDefault();
+});
+
 
