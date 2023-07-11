@@ -15,6 +15,9 @@ btnOnpenDialog.addEventListener('click', () => {
   divBtns.classList.add('hide');
 });
 
+// 
+var elementosList = [];
+
 
 
 // Mapear o btn que vai adicionar uma nova task
@@ -50,6 +53,7 @@ function addNewTask() {
     // Adicionar os elementos na lista
     const list = document.querySelector('#task-list');
     list.appendChild(newTask);
+    elementosList.push(newTask);
 
     // Limpar os inputs
     document.querySelector('#task-name').value = '';
@@ -77,12 +81,18 @@ function addNewTask() {
   
 }
 
-
+//Função para atualizar a quantidade de tarefas
+function updateLength() {
+  const tasksLength = document.querySelector('#tasks-length');
+  tasksLength.textContent = elementosList.length;
+}
 
 
 btnAddNewTask.addEventListener('click', (e)=>{
   e.preventDefault();
   addNewTask();
+  console.log(elementosList);
+  updateLength();
 });
 
 // Função para retornar a data atual
