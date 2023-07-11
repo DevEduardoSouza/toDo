@@ -13,7 +13,7 @@ body{
 /* Task container */
 #tasks-container{
   background-color: #fff;
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;

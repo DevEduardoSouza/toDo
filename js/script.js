@@ -77,22 +77,22 @@ function addNewTask() {
     // Remover elementos
     const btnRemove = document.querySelector('#remove-btn');
     btnRemove.addEventListener('click', ()=>{
+
+      elementosList.map((e)=>{
+        const elemento = e.querySelector('.task-checkbox input');
+        if(elemento.checked){
+          // remover  do dom
+          e.remove();
+          
+          // remover do vetor
+          const index = elementosList.indexOf(e);
+          elementosList.splice(index, 1);
+
+          // Atualizar o total
+          updateLength();
+        }
+      });
       
-    elementosList.map((e)=>{
-      const elemento = e.querySelector('.task-checkbox input');
-      if(elemento.checked){
-        // remover  do dom
-        e.remove();
-        
-        // remover do vetor
-        const index = elementosList.indexOf(e);
-        elementosList.splice(index, 1);
-
-        // Atualizar o total
-        updateLength();
-      }
-    });
-
     });
         
     
