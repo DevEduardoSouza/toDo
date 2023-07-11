@@ -53,26 +53,42 @@ function addNewTask() {
 
     // Limpar os inputs
     document.querySelector('#task-name').value = '';
-    document.querySelector('#task-description').value = '';   
+    document.querySelector('#task-description').value = '';
+
+    // função de voltar
+    // Selecionar o btn de voltar
+    
  
   }else{
-    console.log('vaxio');
+    console.log('vazio');
   }
   
 }
 
+btnAddNewTask.addEventListener('click', (e)=>{
+  e.preventDefault();
+  addNewTask();
+});
+
+// Função para retornar a data atual
 function getDate() {
   const date = new Date();
 
   const month = date.toDateString().slice(4, 8);
   const day = date.getDate();
   const year = date.getFullYear();
-  const dateFormat = day+' '+month+' '+ year;
+  const dateFormat = day+' '+month+' '+year;
 
   return dateFormat;
 }
 
-btnAddNewTask.addEventListener('click', (e)=>{
-  e.preventDefault();
-  addNewTask();
+
+// Remover o dialog
+const btnBack = document.querySelector('#back-btn');
+btnBack.addEventListener('click', (e)=>{
+      e.preventDefault();
+      dialog.classList.add('hide');
+
+      // Mostra os btns inicial
+      divBtns.classList.remove('hide');
 });
