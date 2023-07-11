@@ -41,7 +41,7 @@ function addNewTask() {
 
     newTask.querySelector('.task-title').textContent = nameTask;
     newTask.querySelector('.task-description').textContent = descriptionTask;
-    newTask.querySelector('.date').textContent = '12 jul 2033';
+    newTask.querySelector('.date').textContent = getDate();
     newTask.querySelector('.task-name').textContent = 'Eduardo';
     
     //Remover as classes que não serão mais usadas 
@@ -53,13 +53,23 @@ function addNewTask() {
 
     // Limpar os inputs
     document.querySelector('#task-name').value = '';
-    document.querySelector('#task-description').value = '';
-   
+    document.querySelector('#task-description').value = '';   
  
   }else{
     console.log('vaxio');
   }
   
+}
+
+function getDate() {
+  const date = new Date();
+
+  const month = date.toDateString().slice(4, 8);
+  const day = date.getDate();
+  const year = date.getFullYear();
+  const dateFormat = day+' '+month+' '+ year;
+
+  return dateFormat;
 }
 
 btnAddNewTask.addEventListener('click', (e)=>{
