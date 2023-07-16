@@ -18,8 +18,6 @@ btnOnpenDialog.addEventListener('click', () => {
 // 
 var elementosList = [];
 
-
-
 // Mapear o btn que vai adicionar uma nova task
 const btnAddNewTask = document.querySelector('#add-btn');
 
@@ -94,11 +92,6 @@ function addNewTask() {
       });
       
     });
-        
-    
- 
-  }else{
-    console.log('vazio');
   }
   
 }
@@ -108,8 +101,6 @@ function updateLength() {
   const tasksLength = document.querySelector('#tasks-length');
   tasksLength.textContent = elementosList.length;
 }
-
-
 btnAddNewTask.addEventListener('click', (e)=>{
   e.preventDefault();
   addNewTask();

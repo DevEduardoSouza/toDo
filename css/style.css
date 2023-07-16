@@ -8,6 +8,7 @@ body{
   font-family: Helvetica, sans-serif;
   background-image: linear-gradient(to right, #e9e6f8 ,#EFEEF5);
   color: #000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* Task container */
@@ -161,4 +162,3 @@ body{
 .hide{
   display: none !important;
 }
-
